@@ -21,10 +21,8 @@ class School
   end
 
   def sort
-    @roster.each do |grade, students|
-      #binding.pry
-      @roster[grade] = students.sort
-      #binding.pry
+    @roster.each do |grade, add_student|
+      @roster[grade] = add_student.sort
     end
   
   end
